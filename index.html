@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>CLUB AUTO</title><!-- Titre marqué sur la page en haut d'internet -->
+        <meta name="description" content="Club Auto, vente et location de véhicules automobiles à bons prix" />
     </head>
     <body>
         <header>
@@ -18,15 +19,17 @@
             </ul>
             <p><strong>OUVERTURE :</strong> Du Lundi au Samedi</p>
             <p><strong>HORAIRES :</strong> De 9h à 17h</p>
-            <nav>
+            <nav id="mainNav">
+                <h1 class="accessibility">Menu Principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de Club Auto">Passer le menu</a></p>
                 <ul>
-                    <li>ACCUEIL</li>
-                    <li>VENTE</li>
-                    <li>CONTACT</li>
+                    <li><a href="index.html" title="Vers la page d'Accueil">ACCUEIL</a></li>
+                    <li><a href="vente.html" title="Vers la page des ventes de véhicules">VENTE</a></li>
+                    <li><a href="contact.html" title="Vers la page pour nous contacter">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="pageContent">
         <section id=firstCategorie>
             <h1>CLUB AUTO <strong>LE MEILLEUR DE L'AUTOMOBILE</strong></h1><!-- Grand titre après Header -->
             <figure>
@@ -63,13 +66,69 @@
             </figure>
         </aside>
         </section>
-        <section id=secondCategorie>
-            <h2>Vous souhaitez louer ?</h2>
+        <section id="secondCategorie">
+            <h2>Vous souhaitez louer ?</h2><!-- 2ème catégorie, qui commence aux carrés jaune et rouge -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.</p>
-            <h3>Vous souhaitez acheter ?</h3>
+            <h2>Vous souhaitez acheter ?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        </section>
+        <section id="thirdCategorie"><!-- Liste des voitures récentes dans la 3ème catégorie (3 images) -->
+            <figure>
+                <img src="/images/vehicule2.png" alt="Voiture récente">
+                <figcaption>BMW 535I, NAVI, LEATHER, ABS</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/vehicule2.png" alt="Voiture récente">
+                <figcaption>BMW 328I, SPORT LINE BODY KIT</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/vehicule2.png" alt="Voiture récente">
+                <figcaption>FORD EXPLORER 2015 4WD</figcaption>
+            </figure>
+        </section>
+        <section id="fourthCategorie">
+            <h3 id="titrePourquoi">Pourquoi nous choisir ?</h3><!-- Titre des 4 colonnes au desssus du boutton "Contactez-nous" -->
+            <div>
+                <h4>FINANCEMENT</h4><!-- Les 4 colonnes avec leurs icones dans la 4ème catégorie -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div>
+                <h4>REACTIVITE DE L'EQUIPE TECHNIQUE</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div>
+                <h4>A L'ECOUTE DE NOTRE CLIENTELE</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div>
+                <h4>SERVICE ET MAINTENANCE</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <nav id="contactBody">
+                <a href="contact.html" title="Vers la page pour nous contacter">CONTACTEZ-NOUS</a><!-- Boutton de contact vers la fin du body -->
+            </nav>
+        </section>
+        <section id="fifthCategorie">
+            <h4>CLUB AUTO</h4><!-- 5ème catégorie avec le carré jaune seul -->
+            <p id="venteLocation">VENTE ET LOCATION</p><!-- Deuxième titre de la section mais mis en paragraphe -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -77,7 +136,35 @@
         </section>
         </main>
         <footer>
-
+            <section>
+            <div>
+                <p><span style="color:#6C98E1">CLUB</span> AUTO</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div>
+                <p>HORAIRES D'OUVERTURE</p>
+                <p>Lundi - Samedi : 09:00 - 17:00</p>
+                <p>Dimanche et jorus fériés : Fermé</p>
+            </div>
+            <div>
+                <p>NEWSLETTER</p>
+            </div>
+            <div>
+                <p>RESEAUX SOCIAUX</p>
+                <img src="/images/iconfacebook.png" alt="Page Facebook" title="Notre page Facebook">
+                <img src="/images/icontwitter.png" alt="Page Twitter" title="Notre page Twitter">
+                <img src="/images/iconinstagram.png" alt="Page Instagram" title="Notre page Instagram">
+                <img src="/images/icongoogle.png" alt="Page Google+" title="Notre page Google+">
+                <img src="/images/iconyoutube.png" alt="Chaine Youtube" title="Notre chaine Youtube">
+            </div>
+        </section>
+        <div id="lastDiv">
+            <p>Copyright Club Auto - Tous droits réservés</p>
+            <p>Icônes réseaux sociaux par <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
         </footer>
     </body>
 </html>
