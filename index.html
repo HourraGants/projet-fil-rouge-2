@@ -8,17 +8,23 @@
     <body>
         <header>
             <h1>CLUB AUTO</h1><!-- Gros titre en haut de la page -->
-            <ul>
-                <li>ADRESSE :</li>
-                <li>AVENUE CHARLES DE GAULLE</li>
-                <li>75000 PARIS</li>
-            </ul>
-            <ul>
-                <li>TELEPHONE :</li>
-                <li>01 23 45 67 89</li>
-            </ul>
-            <p><strong>OUVERTURE :</strong> Du Lundi au Samedi</p>
-            <p><strong>HORAIRES :</strong> De 9h à 17h</p>
+            <div>
+                <p>ADRESSE :</p>
+                <p>AVENUE CHARLES DE GAULLE</p>
+                <p>75000 PARIS</p>
+            </div>
+            <div>
+                <p>TELEPHONE :</p>
+                <p>01 23 45 67 89</p>
+            </div>
+            <div>
+                <p><strong>OUVERTURE :</strong> Du Lundi au Samedi</p>
+                <p><strong>HORAIRES :</strong> De 9h à 17h</p>
+            </div>
+            <div>
+                <img src="/images/iconfacebook.png" alt="Page Facebook" title="Notre page Facebook">
+                <img src="/images/icontwitter.png" alt="Page Twitter" title="Notre page Twitter">
+            </div>
             <nav id="mainNav">
                 <h1 class="accessibility">Menu Principal</h1>
                 <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de Club Auto">Passer le menu</a></p>
@@ -81,7 +87,7 @@
         <section id="thirdCategorie"><!-- Liste des voitures récentes dans la 3ème catégorie (3 images) -->
             <figure>
                 <img src="/images/vehicule2.png" alt="Voiture récente">
-                <figcaption>BMW 535I, NAVI, LEATHER, ABS</figcaption>
+                <figcaption><a href="vehiculesdetails.html" title="BMW 535I, NAVI, LEATHER, ABS">BMW 535I, NAVI, LEATHER, ABS</a></figcaption>
             </figure>
             <figure>
                 <img src="/images/vehicule2.png" alt="Voiture récente">
@@ -153,6 +159,7 @@
                 <h2>NEWSLETTER</h2>
                 <form>
                     <input type="email" name="email" id="email" required />
+                    <button type="submit"></button>
                 </form>
                 <p id="derniereOffres">Inscrivez-vous pour recevoir les dernière offres</p>
             </div>
